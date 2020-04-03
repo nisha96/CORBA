@@ -1,0 +1,15 @@
+module DEMSApp
+{
+  interface DEMS
+  {
+
+	string addEvent(in string eventID, in string eventtype, in long capacity);
+	string removeEvent(in string eventID, in string eventtype);
+	string listEvent(in string eventtype);
+	string bookEvent(in string custID,in string eventID,in string eventtype);
+	string getSchedule(in string custID);
+	string cancelEvent(in string custID, in string eventID, in string eventtype); 
+	string swapEvent (in string custID, in string neweventID, in string neweventtype, in string oldeventID, in string oldeventtype);
+    
+    };
+};
